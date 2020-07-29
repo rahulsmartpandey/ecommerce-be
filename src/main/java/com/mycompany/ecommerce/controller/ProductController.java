@@ -53,7 +53,7 @@ public class ProductController {
 		}
 		
 		if(!filteredProducts.isEmpty() && rahul != null && rahul.equalsIgnoreCase("asc")){
-			Collections.sort(filteredProducts);
+			Collections.sort(filteredProducts); // .sort can be used here for sorting as it is string but incase of object sorting need to be done using comparator
 		}else if(!filteredProducts.isEmpty() && rahul != null && rahul.equalsIgnoreCase("desc")){
 			Collections.reverse(filteredProducts);
 		}
