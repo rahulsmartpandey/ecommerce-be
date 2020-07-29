@@ -1,0 +1,12 @@
+In project folder - right click - gitbash here
+or
+
+
+
+git init
+git add .
+git commit -m "first commit"
+git branch -> To check which branch
+git branch branchname -> To create branch
+git checkout branchname -> To move to a particular branch
+history
