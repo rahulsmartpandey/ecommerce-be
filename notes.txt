@@ -1,7 +1,7 @@
 In project folder - right click - gitbash here
 or
 
-
+https://auth-db178.hostinger.com/index.php?db=u852957095_ecommerce
 
 git init
 git add .
@@ -9,4 +9,15 @@ git commit -m "first commit"
 git branch -> To check which branch
 git branch branchname -> To create branch
 git checkout branchname -> To move to a particular branch
+git status
+git push
+git pull
 history
+
+[{},{},{}] --> List of objects / Array of objects
+{"" : ""} --> JSON obj
+
+https://www.baeldung.com/spring-profiles
+https://www.geeksforgeeks.org/comparator-interface-java/#:~:text=Method%202%3A%20Using%20comparator%20interface,elements%20based%20on%20data%20members.
+https://dzone.com/articles/using-the-spring-requestmapping-annotation#:~:text=The%20default%20value%20of%20the,not%20provided%20or%20is%20empty.&text=In%20this%20code%2C%20if%20the,value%20John%20as%20its%20parameter.
+https://dzone.com/articles/integrate-h2-database-in-your-spring-boot-applicat
