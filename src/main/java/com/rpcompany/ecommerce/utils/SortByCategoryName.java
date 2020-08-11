@@ -1,8 +1,8 @@
-package com.mycompany.ecommerce.utils;
+package com.rpcompany.ecommerce.utils;
 
 import java.util.Comparator;
 
-import com.mycompany.ecommerce.model.Category;
+import com.rpcompany.ecommerce.model.Category;
 
 public class SortByCategoryName  implements Comparator<Category>{
 

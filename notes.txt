@@ -1,7 +1,16 @@
 In project folder - right click - gitbash here
 or
 
+ctrl + k - specific word search
+Ctrl + shift + r - filename / file pattern search
+Ctrl + shift + o - organise imports
+Ctrl + shift + f - to format
+refactor - for renaming
+open call heirarchy
+references
+
 https://auth-db178.hostinger.com/index.php?db=u852957095_ecommerce
+https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.details
 
 git init
 git add .

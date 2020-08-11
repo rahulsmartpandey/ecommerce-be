@@ -1,4 +1,4 @@
-package com.mycompany.ecommerce.model;
+package com.rpcompany.ecommerce.model;
 
 
 import java.io.Serializable;
@@ -9,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name="user")
 public class User implements Serializable{
@@ -17,15 +19,13 @@ public class User implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = -4268580453826282146L;
-
-	private String userName;
-	
-	private String password;
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	
 	private Long id;
 	private String email;
+	private String userName;
+	/*@JsonIgnore*/
+	private String password;
 	
 	public String getUserName() {
 		return userName;
@@ -39,6 +39,7 @@ public class User implements Serializable{
 	public void setId(Long id) {
 		this.id = id;
 	}
+	
 	public String getPassword() {
 		return password;
 	}
