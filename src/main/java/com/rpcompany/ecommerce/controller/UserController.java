@@ -31,7 +31,15 @@ public class UserController {
 	}
 	
 	@PostMapping("/login")
-	public void login(@RequestBody User user){
+	public boolean login(@RequestBody User user){
+		
+	Optional<User> userOpt = userRepository.findByEmailAndPassword(user.getEmail(), user.getPassword());
+	
+	if (userOpt.isPresent()){
+		return true;
+		
+	}
+	return false;
 		
 	}
 }
