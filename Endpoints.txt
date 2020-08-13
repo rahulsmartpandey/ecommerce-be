@@ -1,0 +1,96 @@
+
+1. To Enter Categories from client / Browser [Postman]
+
+POST method : when API deployed on Heroku using Java Tech
+https://rp-ecommerce.herokuapp.com/api/categories
+Body : raw
+{"name":"Cloths","description":"New Arrival for 2020"}
+
+2. To Get all Categories Details from client / Browser [Postman]
+
+GET method : when API deployed on local using Java Tech
+https://rp-ecommerce.herokuapp.com/api/categories
+
+GET method : when API deployed on Heroku using Java Tech
+https://rp-ecommerce.herokuapp.com/api/categories
+
+
+
+3. To Get Categories Details from client / Browser [Postman] for a specific category using category ID
+
+Get method : when API deployed on local using Java Tech
+
+
+http://localhost:8080/api/categories/list/{categoryId}
+
+Ex : 
+
+http://localhost:8080/api/categories/list/2
+
+GET method : when API deployed on Heroku using Java Tech
+
+https://rp-ecommerce.herokuapp.com/api/categories/list/2
+
+4. To Enter/save user from client / Browser [Postman]
+
+POST method : when API deployed on local using Java Tech
+http://localhost:8080/api/signup/
+Body : raw
+{"email":"rahulsmartpandey@gmail.com",
+"userName":"rahulsmartpandey",
+"password":"rahul"}
+
+POST method : when API deployed on Heroku using Java Tech
+https://rp-ecommerce.herokuapp.com/api/signup
+Body : raw
+{"email":"rahulpandeyb1995@gmail.com",
+"userName":"rahulpandeyb1995",
+"password":"rahul"}
+
+5. To Get All user Details from client / Browser [Postman]
+
+GET method : when API deployed on local using Java Tech
+http://localhost:8080/api/signup/users
+
+GET method : when API deployed on Heroku using Java Tech
+https://rp-ecommerce.herokuapp.com/api/signup/users
+
+https://rp-ecommerce.herokuapp.com/api/users/{userId}/categories/{categoryId}/products
+
+http://localhost:8080/api/users/{userId}/categories/{categoryId}/products
+
+6. To Add/save/enter products for a specific category:
+
+POST method : when API deployed on local using Java Tech
+
+http://localhost:8080/api/users/{userId}/categories/{categoryId}/products
+http://localhost:8080/api/users/2/categories/1/products
+
+{
+"name":"Blue Jeans Trouser",
+	"description" : "Flying Machine"
+}
+
+POST method : when API deployed on Heroku using Java Tech
+
+https://rp-ecommerce.herokuapp.com/api/users/{userId}/categories/{categoryId}/products
+https://rp-ecommerce.herokuapp.com/api/users/2/categories/1/products
+
+{
+"name":"Blue Jeans Trouser",
+	"description" : "Flying Machine"
+}
+
+
+7. To List all the products for a specific category using categoryId.
+
+GET method : when API deployed on local using Java Tech
+http://localhost:8080/api/categories/{categoryId}/products
+Ex :
+http://localhost:8080/api/categories/1/products
+
+GET method : when API deployed on Heroku using Java Tech
+
+https://rp-ecommerce.herokuapp.com/api/categories/1/products
+
+https://rp-ecommerce.herokuapp.com/api/categories/{categoryId}/products
