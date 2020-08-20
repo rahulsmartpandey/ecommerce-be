@@ -1,11 +1,18 @@
 package com.rpcompany.ecommerce.model;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
-//@Entity
-//@Table(name = "order")
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
+@Entity
+@Table(name = "order")
 
 public class Order {
 	
@@ -13,16 +20,16 @@ public class Order {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
-	private int quantity;
+	private Double quantity;
 	
-	//@ManyToOne//(fetch = FetchType.LAZY, optional = false)
-	//@JoinColumn(name = "product_id", nullable = false)
-	//@OnDelete(action = OnDeleteAction.CASCADE)
+	@ManyToOne//(fetch = FetchType.LAZY, optional = false)
+	@JoinColumn(name = "product_id", nullable = false)
+	@OnDelete(action = OnDeleteAction.CASCADE)
 	private Product product;
 	
-	//@ManyToOne//(fetch = FetchType.LAZY, optional = false)
-	//@JoinColumn(name = "user_id", nullable = false)
-	//@OnDelete(action = OnDeleteAction.CASCADE)
+	@ManyToOne//(fetch = FetchType.LAZY, optional = false)
+	@JoinColumn(name = "user_id", nullable = false)
+	@OnDelete(action = OnDeleteAction.CASCADE)
 	private User user;
 
 	public Long getId() {
@@ -33,11 +40,11 @@ public class Order {
 		this.id = id;
 	}
 
-	public int getQuantity() {
+	public Double getQuantity() {
 		return quantity;
 	}
 
-	public void setQuantity(int quantity) {
+	public void setQuantity(Double quantity) {
 		this.quantity = quantity;
 	}
 
