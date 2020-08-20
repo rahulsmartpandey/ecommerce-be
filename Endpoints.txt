@@ -94,3 +94,28 @@ GET method : when API deployed on Heroku using Java Tech
 https://rp-ecommerce.herokuapp.com/api/categories/1/products
 
 https://rp-ecommerce.herokuapp.com/api/categories/{categoryId}/products
+
+8.
+
+GET method : when API deployed on Heroku using Java Tech
+
+https://rp-ecommerce.herokuapp.com/api/products/7
+
+GET method : when API deployed on local using Java Tech
+
+http://localhost:8080/api/products/7
+
+http://localhost:8080/api/products/{productId}
+
+9. To Enter/Save an address for a specific User
+
+POST method : when API deployed on Local using Java Tech
+
+http://localhost:8080/api/user/{userId}/address
+http://localhost:8080/api/user/2/address
+
+10. To Get all the Addresses :
+
+GET method : when API deployed on local using Java Tech
+
+http://localhost:8080/api/address

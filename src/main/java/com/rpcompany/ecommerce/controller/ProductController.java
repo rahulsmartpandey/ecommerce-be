@@ -52,7 +52,17 @@ public class ProductController {
 	@PostMapping("users/products/{productId}")
 	public List<Product> getProductsWithUserEmail(@RequestBody User user, @PathVariable Long productId, @RequestParam String dummy) {
 		List<Product> allProducts = productRepository. findByIdAndUser(productId, user);
+		
 		return allProducts;
+	}
+	
+	@GetMapping("products/{productId}")
+	public Product getProductsWithProductId(@PathVariable Long productId) {
+		Optional<Product> productOpt = productRepository. findById(productId);
+		if (productOpt.isPresent()){
+			return productOpt.get();
+		}
+		return null;
 	}
 	
 	// http://localhost:8080/api/users/1/products

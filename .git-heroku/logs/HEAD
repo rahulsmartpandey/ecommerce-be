@@ -2,3 +2,6 @@
 7127e2b7b0dbb9e7e09513ef36b41566b3ebaddb 6c0083da3eadf4d807dd12eb4b67e402f21c81f2 RP <rp@g.com> 1597164584 +0530	commit: deploying application with postgres db
 6c0083da3eadf4d807dd12eb4b67e402f21c81f2 d5087f4b06d5b31ac6b1f51273cd7ce8fdd0345c RP <rp@g.com> 1597165551 +0530	commit: cross-origin
 d5087f4b06d5b31ac6b1f51273cd7ce8fdd0345c f5774259e4c6df19c0f203e3b41574cb9c7ca087 RP <rp@g.com> 1597248552 +0530	commit: Listing Products for a specific category
+f5774259e4c6df19c0f203e3b41574cb9c7ca087 f3159e47a39acc32b155862a0ca787cee719c9ea RP <rp@g.com> 1597340769 +0530	commit: api to fetch productById
+f3159e47a39acc32b155862a0ca787cee719c9ea cda1f8c56664edb7389fa0946431c98908a81103 RP <rp@g.com> 1597907569 +0530	commit: address controller
+cda1f8c56664edb7389fa0946431c98908a81103 0a62185bb8bcf0e0be9f3c914de997237b156390 RP <rp@g.com> 1597907677 +0530	commit: address controller

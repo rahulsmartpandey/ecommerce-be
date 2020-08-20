@@ -18,6 +18,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 		public List<Product> findByIdAndUserEmail(Long id, String uEmail);
 		public List<Product> findByNameAndUserUserName(String pName, String uname);
 		public List<Product> findByCategoryId(Long id);
+		public Optional<Product> findById(Long id);
 		
 		@Query("SELECT p FROM Product p WHERE p.user.id = :userId")
 	    public List<Product> findProductsForUser(@Param("userId") Long userId);
